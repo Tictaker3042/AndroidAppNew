@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/plus_label"
@@ -18,7 +18,7 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/minus_label"
@@ -27,12 +27,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/counter"
         android:layout_width="17dp"
         android:layout_height="19dp"
         android:layout_marginTop="48dp"
         android:text="@string/_0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        app:layout_constraintTop_toBottomOf="@+id/button_minus" />
 </androidx.constraintlayout.widget.ConstraintLayout>
