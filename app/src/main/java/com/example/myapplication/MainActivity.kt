@@ -1,20 +1,33 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private val viewModel: CounterViewModel by lazy {
+        ViewModelProvider(this)[CounterViewModel::class.java]
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.buttonMinus.setOnClickListener {Log.e("buttonMinus", "MinusIsPressed1" )}
-        binding.buttonPlus.setOnClickListener { Log.e("buttonPlus", "PlusIsPressed1") }
-        var count = binding.counter.text
-        binding.counter.text = "65"
+        binding.counter.text = viewModel.getCurrent().toString()
+        binding.buttonMinus.setOnClickListener {
+            binding.counter.text = viewModel.getPrev().toString()
+        }
+        binding.buttonPlus.setOnClickListener {
+            binding.counter.text = viewModel.getNext().toString()
+
+            if (viewModel.getCurrent() >= 5) {
+                val intent = Intent(this, SecondActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }

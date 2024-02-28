@@ -3,4 +3,5 @@
     <string name="app_name">My Application</string>
     <string name="minus_label">минус</string>
     <string name="plus_label">плюс</string>
+    <string name="congratulations">Поздравляем</string>
 </resources>
