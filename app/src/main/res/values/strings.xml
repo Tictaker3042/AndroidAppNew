@@ -4,4 +4,6 @@
     <string name="plus_label">plus</string>
     <string name="_0" translatable="false">0</string>
     <string name="congratulations">Congratulations</string>
+    <string name="image_content_description">Picture</string>
+    <string name="button3">Button3</string>
 </resources>

@@ -4,4 +4,6 @@
     <string name="minus_label">минус</string>
     <string name="plus_label">плюс</string>
     <string name="congratulations">Поздравляем</string>
+    <string name="image_content_description">Картинка</string>
+    <string name="button3">Кнопка3</string>
 </resources>
