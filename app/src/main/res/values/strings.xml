@@ -6,4 +6,8 @@
     <string name="congratulations">Congratulations</string>
     <string name="image_content_description">Picture</string>
     <string name="button3">Button3</string>
+    <string name="animals">Animals</string>
+    <string name="dog">Dog</string>
+    <string name="raccoon">Raccoon</string>
+    <string name="cat">Cat</string>
 </resources>

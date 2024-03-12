@@ -29,5 +29,9 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+        binding.animalButton.setOnClickListener {
+            val animals = Intent(this, AnimalActivity::class.java)
+            startActivity(animals)
+        }
     }
 }

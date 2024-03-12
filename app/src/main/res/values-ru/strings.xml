@@ -6,4 +6,8 @@
     <string name="congratulations">Поздравляем</string>
     <string name="image_content_description">Картинка</string>
     <string name="button3">Кнопка3</string>
+    <string name="animals">Животные</string>
+    <string name="dog">Собака</string>
+    <string name="raccoon">Енот</string>
+    <string name="cat">Кот</string>
 </resources>
