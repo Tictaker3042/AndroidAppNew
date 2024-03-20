@@ -43,7 +43,9 @@ class AnimalActivity : AppCompatActivity() {
             Picasso.get().load(current_pic).resize(600, 500).centerCrop().into(binding.animal)
         }
         binding.add.setOnClickListener {
-            favourite_pic = current_pic
+            if (current_pic != null) {
+                favourite_pic = current_pic
+            }
         }
         binding.show.setOnClickListener {
             if (favourite_pic != null) {
