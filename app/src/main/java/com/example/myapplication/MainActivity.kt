@@ -33,5 +33,9 @@ class MainActivity : AppCompatActivity() {
             val animals = Intent(this, AnimalActivity::class.java)
             startActivity(animals)
         }
+        binding.buttonListActivity.setOnClickListener {
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

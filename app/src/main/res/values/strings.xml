@@ -12,4 +12,5 @@
     <string name="cat">Cat</string>
     <string name="add">Add to favourite</string>
     <string name="show">Show favourite</string>
+    <string name="list_activity">List Activity</string>
 </resources>
