@@ -10,4 +10,6 @@
     <string name="dog">Собака</string>
     <string name="raccoon">Енот</string>
     <string name="cat">Кот</string>
+    <string name="add">Добавить в избранное</string>
+    <string name="show">Show favourite</string>
 </resources>

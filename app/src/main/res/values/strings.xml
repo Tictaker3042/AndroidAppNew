@@ -10,4 +10,6 @@
     <string name="dog">Dog</string>
     <string name="raccoon">Raccoon</string>
     <string name="cat">Cat</string>
+    <string name="add">Add to favourite</string>
+    <string name="show">Show favourite</string>
 </resources>

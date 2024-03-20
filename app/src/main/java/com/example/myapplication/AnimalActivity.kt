@@ -28,15 +28,28 @@ class AnimalActivity : AppCompatActivity() {
         val dog2 = "https://www.purina.ru/sites/default/files/2020-09/prichini.jpg"
         val dog3 = "https://s6.stc.all.kpcdn.net/family/wp-content/uploads/2023/02/top-v-luchshie-porody-krupnykh-sobak-960x540-1-960x540.jpg"
         val dogs = listOf<String>(dog1, dog2, dog3)
-
+        var current_pic: String? = null
+        var favourite_pic: String? = null
         binding.cat.setOnClickListener {
-            Picasso.get().load(cats.random()).resize(600, 500).into(binding.animal)
+            current_pic = cats.random()
+            Picasso.get().load(current_pic).resize(600, 500).into(binding.animal)
         }
         binding.dog.setOnClickListener {
-            Picasso.get().load(dogs.random()).fit().into(binding.animal)
+            current_pic = dogs.random()
+            Picasso.get().load(current_pic).fit().into(binding.animal)
         }
         binding.raccoon.setOnClickListener {
-            Picasso.get().load(raccoons.random()).resize(600, 500).centerCrop().into(binding.animal)
+            current_pic = raccoons.random()
+            Picasso.get().load(current_pic).resize(600, 500).centerCrop().into(binding.animal)
+        }
+        binding.add.setOnClickListener {
+            favourite_pic = current_pic
+        }
+        binding.show.setOnClickListener {
+            if (favourite_pic != null) {
+                Picasso.get().load(favourite_pic).resize(600, 500).centerCrop().into(binding.animal)
+
+            }
         }
     }
 }
